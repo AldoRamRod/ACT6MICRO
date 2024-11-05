@@ -8,7 +8,7 @@
 const uint8_t num_chars_per_disp[]={7,7,7,5};
 
 void arranque(void);
-void impre(void);
+void print(void);
 
 int main() {
     stdio_init_all();
@@ -17,7 +17,7 @@ int main() {
     arranque();
 
     // Impresion en pantalla oled 
-    impre();
+    print();
 
     return 0;
 }
@@ -32,7 +32,7 @@ void arranque(void) {
 }
 
 
-void impre(void) {
+void print(void) {
     const char *words[]= {"Aldo", "Ramirez", "Rodriguez"};
 
     ssd1306_t disp;
