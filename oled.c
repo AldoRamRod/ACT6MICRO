@@ -6,7 +6,6 @@
 #include "ssd1306.h"
 
 const uint8_t num_chars_per_disp[]={7,7,7,5};
-const uint8_t *fonts[]={impact};
 
 void arranque(void);
 void print(void);
